@@ -86,7 +86,7 @@ a:hover {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(199, 164, 164, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +104,35 @@ a:hover {
     font-size: 12px;
     fill: #666;
     text-anchor: middle;
+}
+
+
+/* Individual Widget */
+.widget {
+    flex: 1; /* Widgets take equal horizontal space */
+    min-width: 0; /* Prevent overflow issues */
+    text-align: center;
+}
+
+/* Dropdown container styling */
+.select-container {
+    position: relative; /* Enables positioning the caret */
+    display: inline-block;
+    width: 100%; /* Full width of the widget */
+}
+
+.select-container select {
+    width: 100%; /* Dropdown takes up full container width */
+    padding: 10px;
+    padding-right: 30px; /* Space for the caret */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    appearance: none; /* Remove default browser styles */
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 /* Responsive adjustments */
@@ -135,3 +164,15 @@ a:hover {
 }
 
 /* CSS generated with assistance from ChatGPT and DeepSeek. */
+
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    pointer-events: none;
+    z-index: 10;
+}
